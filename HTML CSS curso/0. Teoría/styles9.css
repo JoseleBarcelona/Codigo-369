@@ -1,0 +1,16 @@
+.padre{
+    width: 200px;
+    height: 200px;
+    background-color: #f13929;
+    position: relative; /*(Desbloqueamos la posición)Damos permiso para moverlo donde queramos a través de left, rifgt, etc*/
+    left: 200px;
+}
+.hijo{
+    width: 50px;
+    height: 50px;
+    background-color: #7888ea;
+    position: absolute; /*La pocisión absoluta siempre hace referencia a la posición relativa*/
+    left: 200px; /*desplaza 200px desde la posición padre*/
+    /* left: 0; Coloca al hijo en la posión 0 desde el padre, parte alta izquierda*/
+    /* left: 0; Coloca al hijo en la parte baja izquierda */
+}

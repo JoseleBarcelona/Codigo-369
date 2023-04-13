@@ -1,0 +1,10 @@
+body{
+    /*Formateo de elementos default de los navegadores*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+p span{
+    color: red;
+}

@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    background-color: #202020;
+    display: flex; /*Lo hacemos flexible*/
+    justify-content: center; /*Centramos al hijo boxcontainer en el contenedor container en la parte de arriba*/
+    align-items: center; /*Centramos en el contenedor container al hijo boxcontainer en el centro del padre*/
+    height: 100vh; /*Para que funcione align-items, hay que definir que ocupe toda la pantalla con heigh vh*/
+
+
+}
+.boxcontainer{
+    background-color: #7250ff;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+
+}
+.uno{
+    background-color: #f13929;
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+}

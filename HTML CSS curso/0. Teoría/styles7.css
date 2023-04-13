@@ -1,0 +1,15 @@
+.padre{
+    background-color: #f13929;
+    width: 200px;
+    height: 200px;
+    position: fixed; /*mantiene a padre fijo aunque hijo se desplace*/
+    /* left: 50%; desplaza el hijo a la mitad de la pantalla */
+    /* left: 50px; desplaza el hijo 50px hacia de izquierda a derecha*/
+    right: 0; /*desplaza el hijo al extremo derecho de la pantalla*/
+    bottom: 0;
+}
+.hijo{
+    background-color: #7888ea;
+    width: 300px;
+    height: 300px;
+}

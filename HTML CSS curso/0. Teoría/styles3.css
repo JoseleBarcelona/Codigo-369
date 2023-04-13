@@ -1,0 +1,13 @@
+body{
+    /*Esto se hace siempre para formatear dentro del body, todos los elementos que vienen
+    por defecto en el navegador y así no nos afecte en el tamaño real de nuestro diseño*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.padre{
+    background: blue;
+    height: 300px;
+    width: 300px;
+}

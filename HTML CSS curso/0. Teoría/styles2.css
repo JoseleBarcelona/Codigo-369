@@ -1,0 +1,24 @@
+.padre{
+    background: #F23800;
+    height: 300px;
+    width: 300px;
+    margin: 50px; /*margin crea márgenes arriba, abajo, derecha, izquierda*/
+}
+.hijo{
+    height: 100px;
+    width: 100px;
+    background: black;
+    margin: 50px;
+}
+.madre{
+    background: blue;
+    height: 300px;
+    width: 300px;
+    padding: 30px; /*padding crea rellenos alrededor: arriba, abajo, derecha, izquierda*/
+}
+.hija{
+    background: purple;
+    height: 100px;
+    width: 100px;
+
+}

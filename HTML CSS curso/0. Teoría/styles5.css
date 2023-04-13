@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: black;
+}
+/*Flexbox es utilizado para que los elementos se adpaten sin distorsionarse
+a cualquier tipo de pantalla, sobretodo para los teléfonos móviles
+de esta manera teniendo esta propiedad, puedes hacer un códios sin miedo
+que alcambiar de tamaño de pantalla, vaya a distorsionar los elementos
+o interfaces*/
+.container{
+    background-color: #202020;   /*color de fondo del contenedor padre*/
+    display: flex;                 /*inicializa la propiedad Flexbox*/
+    flex-direction: row;           /*lo convierte en filas o columnas*/
+    justify-content: space-evenly; /*iguala los espacios  entre los elementos*/
+    align-items: center;           /*alinea los elementos*/
+    height: 100vh;                 /*centra los elementos a toda la altura de la pantalla*/
+    flex-wrap: wrap;               /*esto pasa en orden a los elementos a la siguiente fila si el tamño de la pantalla, cambia*/
+    gap: 50px;                     /*controla el espacio entre elementos flexibles*/
+}
+.uno{
+    background-color: #f13929;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
+.dos{
+    background-color: #7250ff;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
+.tres{
+    background-color: #01d0f8;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
