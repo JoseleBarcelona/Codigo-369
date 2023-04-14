@@ -1,0 +1,51 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+a{
+    color: white;
+    text-decoration: none; /*Esto te quita la subrayación que hay bajo los links (Incio, Códigos, Contactos)*/
+
+}
+header{
+    background-color: #14161a;
+    display: flex;/*Hace que se muestren los elementos de izquierda a derecha*/
+    justify-content: space-between;
+    min-height: 70px; /*altura del header*/
+    align-items: center; /*alinea en el centro todo lo que esté dentro del header*/
+    padding: 10px; /*da un relleno y separa el logo y los nombres de los extremos*/
+}
+.logo{  /*Entramos en la clase logo*/
+    display: flex;
+    align-items: center; /*alinea al centro todo lo que está dentro de la clase logo, en este caso el icono*/
+}
+.logo img{  /*Entramos en la subclase logo img*/
+    height: 50px; /*Le damos una altura específica al logo*/
+    margin-right: 10px; /*separamos una distancia a la imagen del siguiente elemento*/
+}
+nav a{
+    font-weight: 600; /*Le damos un relleno específico a la fuente de todo lo que está dentro de nav: inicio códigos contacto*/
+    padding-right: 10px; /*damos un relleno para separar a la inicio codigos contacto entre si*/
+}
+nav a:hover{  /*Hover significa pasar el ratón por encima, en este caso al pasarlo las letras cambian de color*/
+    color: rgb(157, 162, 240);
+}
+/*Tenemos una propiedad muy poderosa que ayuda a cambiar el comportamiento de la pantalla
+cuando cambia de un PC a un móvil y es @media. Podemos poner condicionales dentro de la misma.
+En este caso si inspeccionas el código fuente y eliges ver cómo va a quedar en modo móvil
+ves que cambia la interfaz gráfica y se comprimen la mayoría de los elementos.
+En la propia pantalla del código fuente  en modo teléfono, puedes ver a partir de cuando distorsiona
+al ampliar o estrechar la pantalla y así sabes a aprtir de cuando tienes que poner el condicional
+para que cambie en este caso a verlo en columnas*/
+
+@media (max-width: 680px){ /*A partir de 680px de pantalla, pasa a se columnas*/
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
