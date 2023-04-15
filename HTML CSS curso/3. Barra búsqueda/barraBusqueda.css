@@ -1,0 +1,67 @@
+/*Además, se deben declarar las reglas de CSS para renderizar el ícono a fin de renderizar
+la fuente de forma correcta. Estas reglas suelen entregarse como parte de la hoja de estilo
+de fuentes web de Google, pero deberán incluirse de forma manual en los proyectos
+cuando se aloje la fuente:
+por eso debe copiarse este código de formateo de Google Fonts (.material-icons)
+
+*/
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+    
+}
+.search-bar{
+    border: solid 1px #6aa709;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 100px auto;
+}
+.search-bar:focus-within{ /*focus ejecuta las propiedades que hay dentro de él, cuando entras en cualquier input, button,...etc*/
+    border: solid 1px salmon;
+    box-shadow: 0px 10px 20px black; /*da sombra al elemento*/
+}
+.search-bar input{
+    border: none; /*quitamos el borde que trae el la caja de texto*/
+    outline: none; /*quitamos también el borde que se muestra en la caja de tecto cuando clickamos*/
+    padding: 10px; /*damos relleno alrededor del input*/
+    font-size: 18px; /*damos tamaño a las letras que escribamos*/
+    flex: auto; /*ponemos los elementos de izquierda a derecha y rellena el expacio vacio disponible*/
+}
+.search-bar .actions{ /*damos propiedades a los botones mic, search y la caja de texto*/
+    display: flex; /*llamamos a la propiedad flexbox y lo hacemos responsive (qué reacciona)*/
+    gap: 5px; /*damos un espacio entre el micrófono, el botón de búsqueda y la caja de texto*/
+}
+.search-bar .actions button{ /*damos propiedades a los botones*/
+    border: none; /*quitamos el borde a los botones*/
+    outline: none; /*quitamos el resaltado cuando se le pasa el mouse*/
+    background: none; /*quitamos el fondo del botón*/
+    cursor: pointer; /*aparece una mano apuntando cuando la pasamos por encima de los botones*/
+    color:brown; /*damos un color expecífico a los botones*/
+}
+.search-bar .actions button:hover{ /*damos efectos a los botones cuando pasamos el mouse sobre él*/
+    color: #2979e2;
+
+}
