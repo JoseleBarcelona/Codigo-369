@@ -1,0 +1,31 @@
+<!-- DOM (Document object model)
+Representa la estructura de html y puede ser modificada por
+un lenguaje de programación (Javascripts, PHP,...etc)
+gracias a DOM podemos incorporar Javascript dentro de un
+documento de html y modificar sus propiedades para hacerlas dinámicas-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Sumar</title>
+    <link rel="shortcut icon" href="./JS.png">
+</head>
+<body id="color">
+    <h1>Sumar</h1>
+    <input type="text" id="n1" placeholder="Número 1">
+    <input type="text" id="n2" placeholder="Número 2">
+    <button id="calcular">Calcular</button>
+    <p id="resp">-------</p> 
+
+    <!-- LO RECOMENDABLE PARA ENLAZAR UN ARCHIVO JAVASCRIPT, ES HACERLO AL FINAL DEL BODY
+    EN VEZ DE DENTRO DEL HEAD, YA QUE DE ESTA MANERA PRIMERO SE CARGARÁN PRIMERO
+    LOS METADATOS, LUEGO EL CUERPO DEL DOCUMENTO HTML Y SEGUIDAMENTE SE CARGARÁ 
+    EL ARCHIVO JAVASCRIPT, DE ESTA MANERA LOGRAREMOS QUE NO SE RALENTIZE EL PROCESO
+    DE EJECUCIÓN DEL CÓDIGO Y EVITAR POSIBLES ERRORES -->
+
+    <script src="./index7.js"></script>
+</body>
+</html>
